@@ -1,0 +1,79 @@
+@import "./fonts";
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+body {
+    font-family: 'GetVoIP Grotesque', sans-serif;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.89);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-content {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px dashed #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em rgba(255, 255, 255, 0.5));
+}
+
+.title {
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.label {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    max-width: 1000px;
+}
+
+.link {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 2px solid #ffffff;
+    transition: all .2s linear;
+
+    &:hover {
+        color: #beb3fc;
+        border-color: #beb3fc;
+    }
+}
